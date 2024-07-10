@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://xxx6tsatoeuh"]
+[gd_scene load_steps=12 format=3 uid="uid://xxx6tsatoeuh"]
 
 [ext_resource type="Texture2D" uid="uid://dy8cbj1oljlnm" path="res://Assets/City-Tiles/CP_V1.0.4_nyknck/CP_V1.0.4.png" id="1_c2cbt"]
 [ext_resource type="PackedScene" uid="uid://clybqm7f8p7hi" path="res://Scenes/enemy.tscn" id="2_nnoe0"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://xf8416e8oopm" path="res://Scenes/menu_pause.tscn" id="4_4yvxq"]
 [ext_resource type="PackedScene" uid="uid://bfyqg6i0noqwr" path="res://Scenes/hud_indicators.tscn" id="5_h5xxd"]
 [ext_resource type="PackedScene" uid="uid://cj18a3h7l4nbo" path="res://Scenes/timer_date.tscn" id="6_p3bgx"]
+[ext_resource type="PackedScene" uid="uid://clyisfm4wsy4o" path="res://Scenes/girl.tscn" id="7_i7juw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_uv7rn"]
 
@@ -2112,3 +2113,6 @@ visible = false
 [node name="hud_indicators" parent="HUD" instance=ExtResource("5_h5xxd")]
 
 [node name="TimerDate" parent="HUD" instance=ExtResource("6_p3bgx")]
+
+[node name="girl" parent="." instance=ExtResource("7_i7juw")]
+position = Vector2(295, 103)

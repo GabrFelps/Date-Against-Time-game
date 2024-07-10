@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyiq044ksyi3i"]
+
+[ext_resource type="Script" path="res://Scripts/Game_Over.gd" id="1_wndma"]
+[ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_bljer"]
+
+[node name="Game_Over" type="CanvasLayer"]
+script = ExtResource("1_wndma")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 177.0
+offset_top = 9.0
+offset_right = 769.0
+offset_bottom = 181.0
+theme_override_fonts/font = ExtResource("2_bljer")
+theme_override_font_sizes/font_size = 66
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.441
+anchor_top = 0.5
+anchor_right = 0.582
+anchor_bottom = 0.638
+offset_left = -31.36
+offset_top = 92.0
+offset_right = 3.27997
+offset_bottom = 112.48
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Restart" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bljer")
+theme_override_font_sizes/font_size = 17
+text = "RESTART"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bljer")
+theme_override_font_sizes/font_size = 18
+text = "MAIN MENU"
+
+[connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

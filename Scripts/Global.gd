@@ -10,7 +10,7 @@ var main_scenes := {
 	#"Tutorial" : preload(),
 	"main_menu" : preload("res://Scenes/Menu_Inicial.tscn"),
 	#"game_over" : preload(),
-	#"win" : preload()
+	"win" : preload("res://Scenes/game_win.tscn")
 }
 
 # Função que transiciona as cenas
