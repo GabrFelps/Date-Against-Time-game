@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfyqg6i0noqwr"]
+
+[ext_resource type="Script" path="res://Scripts/hud_indicators.gd" id="1_4ac3m"]
+
+[node name="hud_indicators" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4ac3m")
+
+[node name="health" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 17.0
+offset_right = 10.0
+offset_bottom = 46.0
+color = Color(0.00392157, 0.00392157, 0.00392157, 0)
+
+[node name="bar" type="ColorRect" parent="health"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.670588, 0.0666667, 0, 1)

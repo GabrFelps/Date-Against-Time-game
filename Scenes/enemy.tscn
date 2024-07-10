@@ -1,0 +1,94 @@
+[gd_scene load_steps=13 format=3 uid="uid://clybqm7f8p7hi"]
+
+[ext_resource type="Script" path="res://Scripts/Enemy.gd" id="1_b0hpv"]
+[ext_resource type="Texture2D" uid="uid://cfr5pcuqnmmia" path="res://Assets/Assets-Entities/Ghost/Ghost.png" id="2_aonwa"]
+[ext_resource type="PackedScene" uid="uid://c2f6qfo4gfefj" path="res://Scenes/hit_box.tscn" id="4_5u04h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adakn"]
+atlas = ExtResource("2_aonwa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glnkd"]
+atlas = ExtResource("2_aonwa")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fs7j1"]
+atlas = ExtResource("2_aonwa")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t700u"]
+atlas = ExtResource("2_aonwa")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w63h7"]
+atlas = ExtResource("2_aonwa")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0aw4u"]
+atlas = ExtResource("2_aonwa")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q85ed"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adakn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glnkd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fs7j1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t700u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w63h7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0aw4u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mjuqt"]
+size = Vector2(15.9999, 20.0993)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ewr4q"]
+size = Vector2(20.3853, 23.6736)
+
+[node name="Enemy" type="CharacterBody2D"]
+rotation = 0.0161648
+scale = Vector2(0.5, 0.5)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_b0hpv")
+
+[node name="EnemySprite" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_q85ed")
+autoplay = "default"
+frame_progress = 0.189474
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.033563, 0.0747321)
+rotation = -0.0193757
+shape = SubResource("RectangleShape2D_mjuqt")
+
+[node name="Hit_Box" parent="." instance=ExtResource("4_5u04h")]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" parent="Hit_Box" index="0"]
+position = Vector2(1.92691e-09, 1.19194e-07)
+shape = SubResource("RectangleShape2D_ewr4q")
+
+[node name="DisableHitBoxTimer" parent="Hit_Box" index="1"]
+wait_time = 1.0
+
+[connection signal="body_entered" from="Hit_Box" to="Hit_Box" method="_on_body_entered"]
+
+[editable path="Hit_Box"]

@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=3 uid="uid://bixccnx7d380w"]
+
+[ext_resource type="Script" path="res://Scripts/Menu_Inicial.gd" id="1_4gnl2"]
+
+[sub_resource type="Theme" id="Theme_yv1ki"]
+Button/font_sizes/font_size = 16
+Button/fonts/font = null
+
+[sub_resource type="FontVariation" id="FontVariation_4c7bi"]
+
+[sub_resource type="FontVariation" id="FontVariation_xbavv"]
+base_font = SubResource("FontVariation_4c7bi")
+
+[sub_resource type="FontVariation" id="FontVariation_pe570"]
+
+[sub_resource type="FontVariation" id="FontVariation_bwq2o"]
+
+[node name="Menu_Inicial" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_4gnl2")
+
+[node name="DefaultCrieUmaImagemEmPixelArtParaOFundoDoMenuDeU3" type="Sprite2D" parent="."]
+position = Vector2(480, 270)
+scale = Vector2(0.701754, 0.713542)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.129412, 0.129412, 0.129412, 0.541176)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -50.5
+offset_right = 48.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme = SubResource("Theme_yv1ki")
+
+[node name="Start_Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.698039, 0, 0.105882, 1)
+theme_override_colors/font_focus_color = Color(1, 0.14902, 0.113725, 1)
+theme_override_colors/font_disabled_color = Color(1, 0.14902, 0.113725, 1)
+theme_override_fonts/font = SubResource("FontVariation_xbavv")
+theme_override_font_sizes/font_size = 17
+text = "Start Game"
+
+[node name="Tutorial_Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.698039, 0, 0.105882, 1)
+theme_override_colors/font_focus_color = Color(1, 0.14902, 0.113725, 1)
+theme_override_colors/font_disabled_color = Color(1, 0.14902, 0.113725, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_pe570")
+theme_override_font_sizes/font_size = 17
+text = "Tutorial"
+
+[node name="Exit_Game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.698039, 0, 0.105882, 1)
+theme_override_colors/font_focus_color = Color(1, 0.14902, 0.113725, 1)
+theme_override_colors/font_disabled_color = Color(1, 0.14902, 0.113725, 1)
+theme_override_fonts/font = SubResource("FontVariation_bwq2o")
+theme_override_font_sizes/font_size = 17
+text = "Exit Game"
