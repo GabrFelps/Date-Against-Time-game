@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720633950
+::res://::1720636862
+cilclo.gd::GDScript::-1::1720636862::0::1::::<>Control<>::
 icon.svg::CompressedTexture2D::6371624729307602323::1720631505::1720633788::1::::<><>::
 ::res://Assets/::1720633901
 Default_Crie_uma_imagem_em_pixel_art_para_o_fundo_do_menu_de_u_3.jpg::CompressedTexture2D::20043749467269335::1720631505::1720633788::1::::<><>::
@@ -25,7 +26,8 @@ CP_V1.0.4.png::CompressedTexture2D::8912042497581719466::1720631505::1720633788:
 ::res://Assets/daydream_3/::1720633901
 Daydream 1.0 Personal License.txt::TextFile::-1::1720631505::0::1::::<><>::
 Daydream.ttf::FontFile::93145125921941092::1720631505::1720633788::1::::<><>::
-::res://Scenes/::1720633901
+::res://Scenes/::1720636862
+canvas_layer.tscn::PackedScene::537866998528351123::1720636887::0::1::::<><>::res://cilclo.gd<>res://Scripts/cilclo.gd
 enemy.tscn::PackedScene::5594553683183083806::1720631505::0::1::::<><>::res://Scripts/Enemy.gd<>uid://cfr5pcuqnmmia::::res://Assets/Assets-Entities/Ghost/Ghost.png<>uid://c2f6qfo4gfefj::::res://Scenes/hit_box.tscn
 enemy_spawner.tscn::PackedScene::6418437005945901015::1720631505::0::1::::<><>::
 fade_in_transition.tscn::PackedScene::8902223628587155758::1720631505::0::1::::<><>::res://Scripts/fade_in_transition.gd
@@ -33,12 +35,12 @@ fade_out_transition.tscn::PackedScene::276792148555400718::1720631505::0::1::::<
 hit_box.tscn::PackedScene::6680173119431473259::1720631505::0::1::::<><>::res://Scripts/hit_box.gd
 hud_indicators.tscn::PackedScene::2787893796364507677::1720631505::0::1::::<><>::res://Scripts/hud_indicators.gd
 hurt_box.tscn::PackedScene::1589357486478315265::1720631505::0::1::::<><>::res://Scripts/hurt_box.gd
-Menu_Inicial.tscn::PackedScene::2995537846507213244::1720633792::0::1::::<><>::res://Scripts/Menu_Inicial.gd
+Menu_Inicial.tscn::PackedScene::2995537846507213244::1720636862::0::1::::<><>::res://Scripts/Menu_Inicial.gd
 menu_pause.tscn::PackedScene::1626722154952027394::1720631505::0::1::::<><>::res://Scripts/menu_pause.gd<>uid://blec7eldd6yq::::res://Assets/daydream_3/Daydream.ttf
 player.tscn::PackedScene::4654753418698831168::1720631505::0::1::::<><>::res://Scripts/player.gd<>uid://dd3onhn5dhhau::::res://Assets/Assets-Entities/Player/Idle.png<>uid://b4yp0b8dvxvyn::::res://Assets/Assets-Entities/Player/running-down.png<>uid://b3qv5oqxrrwhq::::res://Assets/Assets-Entities/Player/running.png<>uid://bilxtot15g37s::::res://Assets/Assets-Entities/Player/running-up.png<>uid://wv5qrl2dh4d6::::res://Scenes/hurt_box.tscn
 timer_date.tscn::PackedScene::5460219925432564156::1720631505::0::1::::<><>::res://Scripts/TimerDate.gd<>uid://blec7eldd6yq::::res://Assets/daydream_3/Daydream.ttf
 world.tscn::PackedScene::1663276968238878303::1720631505::0::1::::<><>::uid://dy8cbj1oljlnm::::res://Assets/City-Tiles/CP_V1.0.4_nyknck/CP_V1.0.4.png<>uid://clybqm7f8p7hi::::res://Scenes/enemy.tscn<>uid://b7k2dxx3qohk7::::res://Scenes/player.tscn<>uid://xf8416e8oopm::::res://Scenes/menu_pause.tscn<>uid://bfyqg6i0noqwr::::res://Scenes/hud_indicators.tscn<>uid://cj18a3h7l4nbo::::res://Scenes/timer_date.tscn
-::res://Scripts/::1720633901
+::res://Scripts/::1720636862
 Enemy.gd::GDScript::-1::1720631505::0::1::::Enemy<>CharacterBody2D<>::
 FadeOutTransition.gd::GDScript::-1::1720631505::0::1::::<>CanvasLayer<>::
 fade_in_transition.gd::GDScript::-1::1720631505::0::1::::<>CanvasLayer<>::
@@ -49,4 +51,5 @@ hurt_box.gd::GDScript::-1::1720631505::0::1::::<>Area2D<>::
 Menu_Inicial.gd::GDScript::-1::1720631505::0::1::::<>CanvasLayer<>::
 menu_pause.gd::GDScript::-1::1720631505::0::1::::<>CanvasLayer<>::
 player.gd::GDScript::-1::1720631505::0::1::::Player<>CharacterBody2D<>::
+cilclo.gd::GDScript::-1::1720636862::0::1::::<>Control<>::
 TimerDate.gd::GDScript::-1::1720631505::0::1::::<>Control<>::

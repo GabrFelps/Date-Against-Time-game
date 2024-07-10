@@ -13,7 +13,7 @@ func _ready():
 	start_button.grab_focus()
 	
 func on_start_pressed() -> void:
-	Global.transition_to_scene("game") #Depois da Introduction ser feita, colocá-la no lugar de game
+	get_tree().change_scene_to_file("res://Scenes/Bate-Papo.tscn") #Depois da Introduction ser feita, colocá-la no lugar de game
 	
 #func on_tutorial_pressed() -> void:
 	# get_tree().change_scene_to_file("tutorial") Colocar depois a cena tutorial aqui

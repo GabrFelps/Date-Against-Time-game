@@ -1,1 +1,11 @@
 res://Scenes/Menu_Inicial.tscn
+res://cilclo.gd
+res://Scenes/canvas_layer.tscn
+res://Scripts/cilclo.gd
+res://Scenes/Bate-Papo.tscn
+res://Scripts/Bate-Papo.gd
+res://Scripts/menu_pause.gd
+res://Scenes/menu_pause.tscn
+res://Scenes/bate_papo_2.tscn
+res://Scripts/bate_papo_2.gd
+res://Scripts/Menu_Inicial.gd

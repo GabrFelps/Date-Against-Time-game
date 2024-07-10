@@ -1,0 +1,206 @@
+[gd_scene load_steps=3 format=3 uid="uid://b10ow3x8spdst"]
+
+[ext_resource type="Script" path="res://Scripts/bate_papo_2.gd" id="1_0dhno"]
+[ext_resource type="Script" path="res://cilclo.gd" id="1_5vai3"]
+
+[node name="Bate-Papo2" type="CanvasLayer"]
+script = ExtResource("1_0dhno")
+
+[node name="Interface" type="Node" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Interface"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.430758, 0, 0.102717, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Interface/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -213.0
+offset_top = -270.0
+offset_right = 215.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0430015, 0.000615823, 7.52043e-10, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Interface/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.0
+offset_top = -268.0
+offset_right = 199.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.197937, 0.197937, 0.197937, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Interface/ColorRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -172.0
+offset_top = -54.0
+offset_right = 173.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect5" type="ColorRect" parent="Interface/ColorRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 136.0
+offset_top = -51.0
+offset_right = 170.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.207733, 0.551902, 0.345452, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="Interface/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.0
+offset_top = -198.0
+offset_right = -131.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.49664, 1.19965)
+
+[node name="ColorRect6" type="ColorRect" parent="Interface/ColorRect/ColorRect6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 30.5519
+offset_top = 45.5211
+offset_right = 43.5519
+offset_bottom = 90.5211
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.49664, 1.19965)
+
+[node name="ColorRect3" type="ColorRect" parent="Interface/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -199.0
+offset_right = 199.0
+offset_bottom = 55.0
+grow_horizontal = 2
+color = Color(0.0846899, 0.0846899, 0.0846899, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="Interface/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -172.0
+offset_top = -139.0
+offset_right = -167.0
+offset_bottom = -132.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.734757
+scale = Vector2(-1.64793, 1.17205)
+
+[node name="ColorRect8" type="ColorRect" parent="Interface/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 175.0
+offset_top = -52.0
+offset_right = 180.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.734757
+scale = Vector2(-1.64793, 1.17205)
+
+[node name="cilclo" type="Control" parent="Interface/ColorRect"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 311.0
+offset_top = 28.0
+offset_right = 311.0
+offset_bottom = 28.0
+script = ExtResource("1_5vai3")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Node"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -136.0
+offset_top = 16.0
+offset_right = -23.0
+offset_bottom = 39.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 16
+text = "Docinho 😈❤️"
+
+[node name="Label2" type="Label" parent="Node"]
+offset_left = 316.0
+offset_top = 78.0
+offset_right = 455.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Receba, graças a Deus pai"
+autowrap_mode = 1
+
+[node name="Label3" type="Label" parent="Node"]
+offset_left = 500.0
+offset_top = 166.0
+offset_right = 645.0
+offset_bottom = 218.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "É o cara da luva de pedreiro"
+autowrap_mode = 1
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -58.0
+offset_right = -34.0
+offset_bottom = -27.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Iniciar Jogo"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
