@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnnhstwnmux4v"]
+
+[ext_resource type="Script" path="res://Scripts/Game_Win.gd" id="1_gu2cx"]
+[ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_qsvxh"]
+
+[node name="Game_Win" type="CanvasLayer"]
+script = ExtResource("1_gu2cx")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.0745098)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 310.0
+offset_top = 6.0
+offset_right = 638.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("2_qsvxh")
+theme_override_font_sizes/font_size = 50
+text = "YOU WON"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -28.0
+offset_top = -150.0
+offset_right = 12.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Restart" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qsvxh")
+theme_override_font_sizes/font_size = 14
+text = "RESTART"
+
+[node name="Main_Menu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qsvxh")
+theme_override_font_sizes/font_size = 14
+text = "MAIN MENU"
+
+[connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="VBoxContainer/Main_Menu" to="." method="_on_main_menu_pressed"]
