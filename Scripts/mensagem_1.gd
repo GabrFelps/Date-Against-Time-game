@@ -13,3 +13,4 @@ func _process(_delta):
 	var direction = global_position.direction_to(player.global_position)
 	velocity = SPEED * direction
 	move_and_slide()
+	

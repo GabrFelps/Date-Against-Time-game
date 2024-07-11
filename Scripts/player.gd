@@ -52,15 +52,18 @@ func _on_mouse_entered():
 
 # Hits no player
 func _on_hurt_box_body_entered(body):
+	print("oi")
 	if body is Enemy:
 		hp += 20
 		SPEED = 30
-		await get_tree().create_timer(2).timeout
+		body.queue_free()
 		if hp >= max_hp:
 			hp = max_hp
-	SPEED = 60
 	
-func _on_hurt_box_2_area_entered(body):
 	if body is Message:
 		print("Player colidiu com mensagem.")
 		Global.game_over()
+		
+
+	await get_tree().create_timer(2).timeout
+	SPEED = 60

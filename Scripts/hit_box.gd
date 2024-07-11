@@ -16,7 +16,7 @@ func _on_disable_hit_box_timer_timeout():
 		collision.call_deferred("set", "disabled", false)
 
 
-func _on_body_entered(body):
-	if body is Player:
-		await get_tree().create_timer(1).timeout
-		enemy.queue_free()
+#func _on_body_entered(body):
+	#if body is Player:
+		#await get_tree().create_timer(1).timeout
+		#enemy.queue_free()
