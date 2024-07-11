@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cjfodhfuls3hu"]
 
-[ext_resource type="Script" path="res://Circle1.gd" id="1_jeykg"]
+[ext_resource type="Script" path="res://Scripts/Circle1.gd" id="1_jeykg"]
 [ext_resource type="Script" path="res://Scripts/bate_papo_1.gd" id="1_oi851"]
 
 [node name="BatePapo1" type="CanvasLayer"]
