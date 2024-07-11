@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cwrqsneoy4lek"]
 
 [ext_resource type="Script" path="res://Scripts/bate_papo_2.gd" id="1_bnjou"]
-[ext_resource type="Script" path="res://circle2.gd" id="1_r3n60"]
+[ext_resource type="Script" path="res://Scripts/circle2.gd" id="1_r3n60"]
 [ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_m23bd"]
 
 [node name="bate_papo2" type="CanvasLayer"]

@@ -6,9 +6,6 @@ extends Node2D
 
 var time = 0
 
-func _process(delta):
-	print("pns")
-
 ## Disparado a cada segundo
 func _on_timer_timeout():
 	time += 1
@@ -20,7 +17,11 @@ func _on_timer_timeout():
 			else:
 				i.spawn_delay_counter = 0
 				var new_enemy = load(str(i.enemy.resource_path))
-				print("inimigo gozante")
+				Global.pode_spawnar_mensagem = false
+				Global.message_index += 1
+				if Global.message_index > 4:
+					Global.message_index = 1
+				
 				var counter = 0
 				while counter < i.enemy_num:
 					var enemy_spawn = new_enemy.instantiate()
