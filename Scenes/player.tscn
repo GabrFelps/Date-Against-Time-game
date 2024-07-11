@@ -170,6 +170,8 @@ rotation = 3.14316
 shape = SubResource("CapsuleShape2D_x6n2q")
 
 [node name="Hurt_Box2" parent="." instance=ExtResource("7_3d5hf")]
+light_mask = 2
+visibility_layer = 6
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="body_entered" from="Hurt_Box" to="." method="_on_hurt_box_body_entered"]
