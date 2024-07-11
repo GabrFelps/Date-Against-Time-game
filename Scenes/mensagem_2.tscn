@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://47imxy2eur0x"]
 
 [ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_cwp5j"]
-[ext_resource type="PackedScene" path="res://Scenes/hit_box_mensagem.tscn" id="3_5eklt"]
+[ext_resource type="PackedScene" uid="uid://6q02lep7pd2j" path="res://Scenes/hit_box_mensagem.tscn" id="3_5eklt"]
 
 [sub_resource type="GDScript" id="GDScript_y4wvy"]
 script/source = "extends CharacterBody2D

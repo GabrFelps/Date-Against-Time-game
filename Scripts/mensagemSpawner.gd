@@ -6,6 +6,8 @@ extends Node2D
 
 var time = 0
 
+signal message_fix
+
 ## Disparado a cada segundo
 func _on_timer_timeout():
 	time += 1
@@ -27,6 +29,7 @@ func _on_timer_timeout():
 					var enemy_spawn = new_enemy.instantiate()
 					enemy_spawn.global_position = get_random_position()
 					add_child(enemy_spawn)
+					enemy_spawn.message.text = enemy_spawn.database_message[Global.message_index]
 					counter += 1
 					
 				

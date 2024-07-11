@@ -9,7 +9,7 @@ var database_message : Dictionary = {
 	2 : "pauzin",
 	3 : "brusquetinha",
 	4 : "blackhole games"
-	}
+}
 
 @export var SPEED = 50.0
 @export var DAMAGE = 100.0
@@ -22,4 +22,4 @@ func _process(_delta):
 	velocity = SPEED * direction
 	move_and_slide()
 	
-	message.text = database_message[Global.message_index]
+	#message.text = database_message[Global.message_index]
