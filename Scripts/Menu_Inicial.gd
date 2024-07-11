@@ -14,7 +14,7 @@ func _ready():
 	
 func on_start_pressed() -> void:
 	Global.transition_to_scene("game") #Depois da Introduction ser feita, colocá-la no lugar de game
-	
+	Global.transition_to_scene("introduction")
 #func on_tutorial_pressed() -> void:
 	# get_tree().change_scene_to_file("tutorial") Colocar depois a cena tutorial aqui
 	

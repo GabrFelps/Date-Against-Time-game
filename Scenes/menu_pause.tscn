@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://xf8416e8oopm"]
 
 [ext_resource type="Script" path="res://Scripts/menu_pause.gd" id="1_fsu42"]
-[ext_resource type="FontFile" uid="uid://blec7eldd6yq" path="res://Assets/daydream_3/Daydream.ttf" id="2_yttim"]
+[ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_q2l2d"]
 
 [sub_resource type="Theme" id="Theme_e6ksx"]
-Button/fonts/font = ExtResource("2_yttim")
+Button/fonts/font = ExtResource("2_q2l2d")
 
 [sub_resource type="InputEventAction" id="InputEventAction_n8e4l"]
 action = &"ui_cancel"
@@ -53,7 +53,7 @@ theme_override_colors/font_pressed_color = Color(0.698039, 0, 0.105882, 1)
 theme_override_colors/font_focus_color = Color(1, 0.14902, 0.113725, 1)
 theme_override_colors/font_disabled_color = Color(1, 0.14902, 0.113725, 1)
 theme_override_font_sizes/font_size = 16
-text = "BAck to Menu"
+text = "Back to Menu"
 
 [connection signal="pressed" from="VBoxContainer/Resume__Button" to="." method="_on_resume__button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Menu_Button" to="." method="_on_menu_button_pressed"]
