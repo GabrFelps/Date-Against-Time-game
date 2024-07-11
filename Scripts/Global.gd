@@ -6,7 +6,7 @@ extends Node
 # Cenas principais
 var main_scenes := {
 	"game" : preload("res://Scenes/world.tscn"),
-	#"introduction":preload(), Cena das mensagens aparecendo entre Main Menu e World
+	"introduction" : preload("res://Scenes/bate_papo_1.tscn"), # Cena das mensagens aparecendo entre Main Menu e World
 	#"Tutorial" : preload(),
 	"main_menu" : preload("res://Scenes/Menu_Inicial.tscn"),
 	#"game_over" : preload(),
