@@ -52,8 +52,8 @@ func _on_mouse_entered():
 
 # Hits no player
 func _on_hurt_box_body_entered(body):
-	print("oi")
 	if body is Enemy:
+		print("Colisão com fantasama")
 		hp += 20
 		SPEED = 30
 		body.queue_free()
