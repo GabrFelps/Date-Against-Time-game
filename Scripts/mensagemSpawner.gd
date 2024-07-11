@@ -1,12 +1,13 @@
 extends Node2D
 
+## Array que guarda as informações de Spawn de cada cena
 @export var spawns: Array[SpawnInfo] = []
 @onready var player = get_tree().get_first_node_in_group("Player")
 
 var time = 0
 
 
-
+## Disparado a cada segundo
 func _on_timer_timeout():
 	time += 1
 	var enemy_spawns = spawns

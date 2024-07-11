@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://bw0irr5mq4b70"]
+
+[ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_cwp5j"]
+[ext_resource type="PackedScene" uid="uid://6q02lep7pd2j" path="res://Scenes/hit_box_mensagem.tscn" id="3_5eklt"]
+
+[sub_resource type="GDScript" id="GDScript_y4wvy"]
+script/source = "extends CharacterBody2D
+
+
+@export var SPEED = 50.0
+@export var DAMAGE = 100.0
+@onready var player = get_tree().get_first_node_in_group(\"Player\")
+@onready var sprite = $Sprite2D
+
+func _ready():
+	pass 
+
+func _process(_delta):
+	var direction = global_position.direction_to(player.global_position)
+	velocity = SPEED * direction
+	move_and_slide()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltxle"]
+size = Vector2(359.5, 78)
+
+[node name="Mensagem1" type="CharacterBody2D"]
+script = SubResource("GDScript_y4wvy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(181.25, 42)
+shape = SubResource("RectangleShape2D_ltxle")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 5)
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_right = 364.0
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("2_cwp5j")
+theme_override_font_sizes/font_size = 17
+text = "O QUE ACONTECEU CONTIGO?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hit_Box" parent="." instance=ExtResource("3_5eklt")]

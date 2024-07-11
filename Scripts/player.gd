@@ -62,4 +62,5 @@ func _on_hurt_box_body_entered(body):
 	
 func _on_hurt_box_2_area_entered(body):
 	if body is Message:
+		print("Player colidiu com mensagem.")
 		Global.game_over()
