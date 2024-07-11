@@ -1,11 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bixccnx7d380w"]
+[gd_scene load_steps=3 format=3 uid="uid://bixccnx7d380w"]
 
 [ext_resource type="Script" path="res://Scripts/Menu_Inicial.gd" id="1_4gnl2"]
-[ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_h51fv"]
 
 [sub_resource type="Theme" id="Theme_yv1ki"]
 Button/font_sizes/font_size = 16
-Button/fonts/font = ExtResource("2_h51fv")
+Button/fonts/font = null
 
 [node name="Menu_Inicial" type="CanvasLayer"]
 process_mode = 3

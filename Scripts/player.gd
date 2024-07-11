@@ -51,8 +51,6 @@ func _on_mouse_entered():
 	collision.set_deferred("disabled", true)
 
 # Hits no player
-
-
 func _on_hurt_box_body_entered(body):
 	if body is Enemy:
 		hp += 20
@@ -61,3 +59,7 @@ func _on_hurt_box_body_entered(body):
 		if hp >= max_hp:
 			hp = max_hp
 	SPEED = 60
+	
+func _on_hurt_box_2_area_entered(body):
+	if body is Message:
+		Global.game_over()
