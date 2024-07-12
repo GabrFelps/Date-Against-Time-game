@@ -14,6 +14,8 @@ func _process(_delta):
 	if minutes == 0 and seconds == 0:
 		Global.transition_to_scene("game_over")
 	
+	if minutes == 1 and seconds == 30:
+		Global.pode_spawnar_mensagem = true
 
 
 	

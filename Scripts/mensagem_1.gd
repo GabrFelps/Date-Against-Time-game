@@ -3,12 +3,11 @@ class_name Message
 
 @onready var message = $message
 
-
 var database_message : Dictionary = {
 	1 : "Já está vindo?",
 	2 : "Que demora é essa??",
 	3 : "Cadê você???",
-	4 : "Vai me deixar esperando mesmo??"
+	4 : "Vai me deixar esperando?"
 }
 
 @export var SPEED = 48.0

@@ -86,24 +86,31 @@ color = Color(0.113725, 0.305882, 0.258824, 1)
 
 [node name="ColorRect7" type="ColorRect" parent="Interface2"]
 offset_left = 334.0
-offset_top = 89.0
-offset_right = 638.0
-offset_bottom = 122.0
+offset_top = 87.0
+offset_right = 631.0
+offset_bottom = 123.0
 color = Color(0.505882, 0.717647, 0.521569, 1)
 
 [node name="ColorRect9" type="ColorRect" parent="Interface2"]
-offset_left = 498.0
+offset_left = 489.0
 offset_top = 146.0
-offset_right = 639.0
+offset_right = 630.0
 offset_bottom = 175.0
 color = Color(0.912289, 0.912289, 0.912289, 1)
 
 [node name="ColorRect8" type="ColorRect" parent="Interface2"]
-offset_left = 330.0
-offset_top = 86.0
-offset_right = 335.0
-offset_bottom = 91.0
-color = Color(0.243137, 0.243137, 0.243137, 1)
+offset_left = 329.0
+offset_top = 87.0
+offset_right = 334.0
+offset_bottom = 92.0
+color = Color(0.505882, 0.717647, 0.521569, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="Interface2"]
+offset_left = 629.0
+offset_top = 146.0
+offset_right = 634.0
+offset_bottom = 151.0
+color = Color(0.909804, 0.909804, 0.909804, 1)
 
 [node name="Control" type="Control" parent="Interface2"]
 layout_mode = 3
@@ -139,9 +146,9 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Nosso encontro será às 17:00, certo?"
 
 [node name="Label4" type="Label" parent="Texts2"]
-offset_left = 510.0
+offset_left = 497.0
 offset_top = 150.0
-offset_right = 588.0
+offset_right = 621.0
 offset_bottom = 173.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Sim, estou indo!"

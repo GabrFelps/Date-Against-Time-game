@@ -6,10 +6,11 @@ class_name Enemy
 @export var DAMAGE = 100.0
 @onready var player = get_tree().get_first_node_in_group("Player")
 @onready var sprite = $EnemySprite
+var spawn_distance 
+var range = 300
 
 func _ready():
-	pass
-
+	spawn_distance = self.global_position;
 
 
 func _physics_process(_delta):
@@ -22,5 +23,6 @@ func _physics_process(_delta):
 	else:
 		sprite.flip_h = false
 	move_and_slide()
+	if (self.global_position - spawn_distance).length() > range:
+		queue_free();
 	
-		

@@ -92,19 +92,19 @@ offset_top = 87.0
 offset_right = 151.0
 offset_bottom = 123.0
 grow_horizontal = 2
-color = Color(0.5046, 0.717274, 0.520155, 1)
+color = Color(0.505882, 0.717647, 0.521569, 1)
 
 [node name="ColorRect8" type="ColorRect" parent="Interface"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -150.0
-offset_top = 91.0
+offset_top = 92.0
 offset_right = -145.0
-offset_bottom = 96.0
+offset_bottom = 97.0
 grow_horizontal = 2
 rotation = -1.56994
-color = Color(0.243137, 0.243137, 0.243137, 1)
+color = Color(0.505882, 0.717647, 0.521569, 1)
 
 [node name="Control" type="Control" parent="Interface"]
 layout_mode = 3
