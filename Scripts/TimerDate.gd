@@ -12,7 +12,7 @@ func _ready():
 
 func _process(_delta):
 	if minutes == 0 and seconds == 0:
-		Global.transition_to_scene("main_menu")
+		Global.transition_to_scene("game_over")
 	
 
 
