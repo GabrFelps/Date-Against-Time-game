@@ -9,7 +9,7 @@ var SPEED = 60.0
 
 # Stats do Player
 var hp = 0
-var max_hp = 120
+var max_hp = 200
 
 func _physics_process(_delta):
 	movement()
@@ -59,6 +59,8 @@ func _on_hurt_box_body_entered(body):
 		body.queue_free()
 		if hp >= max_hp:
 			hp = max_hp
+		
+			
 	
 	if body is Message:
 		print("Player colidiu com mensagem.")

@@ -31,6 +31,7 @@ func _on_timer_timeout():
 						add_child(enemy_spawn)
 						enemy_spawn.message.text = enemy_spawn.database_message[Global.message_index]
 						counter += 1
+						
 					
 				
 func get_random_position():
