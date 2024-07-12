@@ -15,6 +15,10 @@ var database_message : Dictionary = {
 @onready var player = get_tree().get_first_node_in_group("Player")
 @onready var sprite = $Sprite2D
 
+func _ready():
+	collision_layer = 3
+	
+	
 
 func _process(_delta):
 	var direction = global_position.direction_to(player.global_position)
@@ -22,3 +26,10 @@ func _process(_delta):
 	move_and_slide()
 	
 	#message.text = database_message[Global.message_index]
+
+
+func _on_area_2d_body_entered(body):
+	if body is Player:
+		Global.game_over()
+		
+		

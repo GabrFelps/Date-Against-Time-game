@@ -22,7 +22,7 @@ func transition_to_scene(destiny_scene: String) -> void:
 	add_child(trans)
 
 func game_over() -> void:
-	Global.transition_to_scene("main_menu") # Depois, alterar para tela de game over
+	Global.transition_to_scene("game_over") # Depois, alterar para tela de game over
 	
 func win() -> void:
-	Global.transition_to_scene("main_menu") # Depois, alterar para win
+	Global.transition_to_scene("win") # Depois, alterar para win

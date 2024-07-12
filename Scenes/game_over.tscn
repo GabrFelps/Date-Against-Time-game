@@ -58,5 +58,20 @@ theme_override_fonts/font = ExtResource("2_bljer")
 theme_override_font_sizes/font_size = 18
 text = "MAIN MENU"
 
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -283.0
+offset_top = -123.5
+offset_right = 272.0
+offset_bottom = -83.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_bljer")
+text = "Voce perdeu pois estava com muita vergonha no encontro."
+
 [connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
