@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=3 uid="uid://bum8qqm77pptr"]
+
+[ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="1_f5d3u"]
+[ext_resource type="Script" path="res://Scripts/tutorial.gd" id="1_fc725"]
+[ext_resource type="Texture2D" uid="uid://bv5s7gr78jae7" path="res://Assets/Default_Main_Scene_A_couple_with_their_backs_to_the_screen_in_1.jpg" id="3_vr3er"]
+
+[node name="tutorial" type="CanvasLayer"]
+script = ExtResource("1_fc725")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.0745098)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 245.0
+offset_top = 8.0
+offset_right = 728.0
+offset_bottom = 130.0
+theme_override_fonts/font = ExtResource("1_f5d3u")
+theme_override_font_sizes/font_size = 20
+text = "WELCOME TO DATE AGAISNT  TIME"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -115.0
+offset_right = 8.0
+offset_bottom = -75.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_f5d3u")
+theme_override_font_sizes/font_size = 16
+text = "EXIT
+"
+
+[node name="Label2" type="Label" parent="."]
+texture_filter = 1
+offset_left = 23.0
+offset_top = 97.0
+offset_right = 989.0
+offset_bottom = 369.0
+theme_override_font_sizes/font_size = 16
+text = "-> You've made a date with your partner and you need to be on time for everything to work out in your 
+love life. To do this, execute the commands to take your character to the location of the ride and 
+watch out for hazards along the way:
+-> The \"ESC\" key is used to pause the game if you need a break.
+-> When you collide with ghosts, your anxiety level increases and, if it reaches its maximum,you will 
+suffer a game over due to nervousness when you arrive at the meeting place.
+-> When you collide with messages from your lover, you will immediately suffer a game over,as the 
+messages are used to put pressure on the player."
+uppercase = true
+
+[node name="DefaultMainSceneACoupleWithTheirBacksToTheScreenIn1" type="Sprite2D" parent="."]
+self_modulate = Color(0.270222, 0.270222, 0.270222, 1)
+z_index = -1
+position = Vector2(476, 134)
+scale = Vector2(1.01875, 0.854167)
+texture = ExtResource("3_vr3er")
+
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

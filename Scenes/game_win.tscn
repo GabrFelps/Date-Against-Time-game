@@ -1,10 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnnhstwnmux4v"]
+[gd_scene load_steps=4 format=3 uid="uid://cnnhstwnmux4v"]
 
 [ext_resource type="Script" path="res://Scripts/Game_Win.gd" id="1_gu2cx"]
+[ext_resource type="Texture2D" uid="uid://ct33a1swlk62w" path="res://Assets/Default_2D_illustration_of_a_nighttime_urban_scene_with_the_th_2.jpg" id="2_pgthu"]
 [ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_qsvxh"]
 
 [node name="Game_Win" type="CanvasLayer"]
 script = ExtResource("1_gu2cx")
+
+[node name="Default2dIllustrationOfANighttimeUrbanSceneWithTheTh2" type="Sprite2D" parent="."]
+self_modulate = Color(0.513233, 0.513233, 0.513233, 1)
+position = Vector2(478, 261.5)
+scale = Vector2(1.01042, 0.573958)
+texture = ExtResource("2_pgthu")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
