@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cxpeyqa041jdn"]
+[gd_scene load_steps=5 format=3 uid="uid://cxpeyqa041jdn"]
 
 [ext_resource type="Script" path="res://Scripts/mensagemSpawner.gd" id="1_cha4m"]
 [ext_resource type="PackedScene" uid="uid://qdoeg4xoxs37" path="res://Scenes/mensagem_1.tscn" id="2_v2yvw"]
@@ -7,32 +7,17 @@
 [sub_resource type="Resource" id="Resource_w3skl"]
 script = ExtResource("3_imly8")
 time_start = 1
-time_end = 20
+time_end = 180
 enemy = ExtResource("2_v2yvw")
 enemy_num = 1
 enemy_spawn_delay = 1
 
-[sub_resource type="Resource" id="Resource_hdfyk"]
-script = ExtResource("3_imly8")
-time_start = 20
-time_end = 45
-enemy = ExtResource("2_v2yvw")
-enemy_num = 2
-enemy_spawn_delay = 1
-
-[sub_resource type="Resource" id="Resource_03goc"]
-script = ExtResource("3_imly8")
-time_start = 46
-time_end = 60
-enemy = ExtResource("2_v2yvw")
-enemy_num = 3
-enemy_spawn_delay = 2
-
 [node name="MensagemSpawner" type="Node2D"]
 script = ExtResource("1_cha4m")
-spawns = Array[ExtResource("3_imly8")]([SubResource("Resource_w3skl"), SubResource("Resource_hdfyk"), SubResource("Resource_03goc")])
+spawns = Array[ExtResource("3_imly8")]([SubResource("Resource_w3skl")])
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 3.942
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

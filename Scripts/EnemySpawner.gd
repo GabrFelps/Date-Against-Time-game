@@ -1,38 +1,26 @@
 extends Node2D
 
-## Array que guarda as informações de Spawn de cada cena
-@export var spawns: Array[SpawnInfo] = []
 @onready var player = get_tree().get_first_node_in_group("Player")
+var can_spawn = false
 
-var time = 0
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
 
-signal message_fix
 
-## Disparado a cada segundo
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
 func _on_timer_timeout():
-	time += 1
-	var enemy_spawns = spawns
-	if Global.pode_spawnar_mensagem:
-		for i in enemy_spawns:
-			if time >= i.time_start and time <= i.time_end:
-				if i.spawn_delay_counter < i.enemy_spawn_delay:
-					i.spawn_delay_counter += 1
-				else:
-					i.spawn_delay_counter = 0
-					var new_enemy = load(str(i.enemy.resource_path))
-					Global.message_index += 1
-					if Global.message_index > 4:
-						Global.message_index = 1
-					
-					var counter = 0
-					while counter < i.enemy_num:
-						var enemy_spawn = new_enemy.instantiate()
-						enemy_spawn.global_position = get_random_position()
-						add_child(enemy_spawn)
-						enemy_spawn.message.text = enemy_spawn.database_message[Global.message_index]
-						counter += 1
-					
-				
+	if can_spawn:
+		var _new_ghost = load("res://Scenes/enemy.tscn")
+		var _ghost_spawn = _new_ghost.instantiate()
+		_ghost_spawn.global_position = get_random_position()
+		get_parent().add_child(_ghost_spawn)
+	
+
 func get_random_position():
 	var vpr = get_viewport_rect().size * randf_range(1.1,1.3)
 	var top_left = Vector2(player.global_position.x - vpr.x/2, player.global_position.y - vpr.y/2)
@@ -61,3 +49,9 @@ func get_random_position():
 	var x_spawn = randf_range(spawn_pos1.x , spawn_pos2.x)
 	var y_spawn = randf_range(spawn_pos1.y , spawn_pos2.y)
 	return Vector2(x_spawn,y_spawn)
+
+
+
+
+func _on_area_2d_area_entered(area):
+	can_spawn = true # Replace with function body.

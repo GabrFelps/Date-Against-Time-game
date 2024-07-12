@@ -23,7 +23,7 @@ func movement() -> void:
 	var movement_y = Input.get_action_strength("down") - Input.get_action_strength("up")
 	var movementvector = Vector2(movement_x, movement_y)
 	# Vectorizes player movement
-	velocity = movementvector * SPEED
+	velocity = movementvector.normalized() * SPEED
 	play_animation(movementvector)
 	move_and_slide()
 
@@ -53,7 +53,7 @@ func _on_mouse_entered():
 # Hits no player
 func _on_hurt_box_body_entered(body):
 	if body is Enemy:
-		print("Colisão com fantasama")
+		#print("Colisão com fantasama")
 		hp += 20
 		SPEED = 30
 		body.queue_free()
