@@ -1,0 +1,14 @@
+res://Scenes/player.tscn
+res://Scenes/world.tscn
+res://Scripts/mensagem_1.gd
+res://Scenes/mensagem_3.tscn
+res://Scenes/mensagem_1.tscn
+res://Scripts/TimerDate.gd
+res://Scenes/hurt_box.tscn
+res://Scenes/hurt_box_mensagem.tscn
+res://Scenes/fade_out_transition.tscn
+res://Scenes/timer_date.tscn
+res://Scenes/enemy_spawner.tscn
+res://Scripts/player.gd
+res://Scenes/bate_papo_1.tscn
+res://Scenes/bate_papo_2.tscn

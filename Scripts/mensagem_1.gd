@@ -5,13 +5,13 @@ class_name Message
 
 
 var database_message : Dictionary = {
-	1 : "cuzin",
-	2 : "pauzin",
-	3 : "brusquetinha",
-	4 : "blackhole games"
+	1 : "Já está vindo?",
+	2 : "Que demora é essa??",
+	3 : "Cadê você???",
+	4 : "Vai me deixar esperando mesmo??"
 }
 
-@export var SPEED = 50.0
+@export var SPEED = 48.0
 @export var DAMAGE = 100.0
 @onready var player = get_tree().get_first_node_in_group("Player")
 @onready var sprite = $Sprite2D

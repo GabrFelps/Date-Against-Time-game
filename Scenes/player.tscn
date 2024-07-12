@@ -159,7 +159,7 @@ frame_progress = 0.302104
 shape = SubResource("RectangleShape2D_ino7v")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(5, 5)
+zoom = Vector2(3, 3)
 
 [node name="Hurt_Box" parent="." instance=ExtResource("7_naive")]
 collision_mask = 4
