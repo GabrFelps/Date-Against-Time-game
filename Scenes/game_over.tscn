@@ -1,10 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://cyiq044ksyi3i"]
+[gd_scene load_steps=4 format=3 uid="uid://cyiq044ksyi3i"]
 
 [ext_resource type="Script" path="res://Scripts/Game_Over.gd" id="1_wndma"]
 [ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_bljer"]
+[ext_resource type="Texture2D" uid="uid://birite53evl3v" path="res://Assets/Default_2D_illustration_of_a_nighttime_urban_scene_Show_a_girl_1.jpg" id="3_2io3v"]
 
 [node name="Game_Over" type="CanvasLayer"]
 script = ExtResource("1_wndma")
+
+[node name="Default2dIllustrationOfANighttimeUrbanSceneShowAGirl1" type="Sprite2D" parent="."]
+self_modulate = Color(0.396889, 0.396889, 0.396889, 1)
+z_index = -1
+position = Vector2(477.5, 271.5)
+scale = Vector2(0.946289, 0.530273)
+texture = ExtResource("3_2io3v")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 177.0

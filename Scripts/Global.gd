@@ -9,9 +9,9 @@ var pode_spawnar_mensagem = true
 var main_scenes := {
 	"game" : preload("res://Scenes/world.tscn"),
 	"introduction" : preload("res://Scenes/bate_papo_1.tscn"), # Cena das mensagens aparecendo entre Main Menu e World
-	#"Tutorial" : preload(),
+	"Tutorial" : preload("res://Scenes/tutorial.tscn"),
 	"main_menu" : preload("res://Scenes/Menu_Inicial.tscn"),
-	#"game_over" : preload(),
+	"game_over" : preload("res://Scenes/game_over.tscn"),
 	"win" : preload("res://Scenes/game_win.tscn")
 }
 

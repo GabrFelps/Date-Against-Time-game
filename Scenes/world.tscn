@@ -2105,6 +2105,6 @@ visible = false
 [node name="TimerDate" parent="HUD" instance=ExtResource("6_p3bgx")]
 
 [node name="girl" parent="." instance=ExtResource("7_i7juw")]
-position = Vector2(295, 103)
+position = Vector2(645, -2973)
 
 [node name="MensagemSpawner" parent="." instance=ExtResource("8_r8m8m")]
