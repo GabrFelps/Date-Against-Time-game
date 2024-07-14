@@ -4,11 +4,10 @@ class_name Player
 signal hit
 @onready var player_sprite = $PlayerSprite
 @onready var collision = $CollisionShape2D
-var SPEED = 60.0
+var SPEED = 400.0
 
 
 # Stats do Player
-var hp = 0
 var max_hp = 200
 
 func _physics_process(_delta):
@@ -54,11 +53,11 @@ func _on_mouse_entered():
 func _on_hurt_box_body_entered(body):
 	if body is Enemy:
 		#print("Colisão com fantasama")
-		hp += 20
+		Global.hp += 20
 		SPEED = 30
 		body.queue_free()
-		if hp >= max_hp:
-			hp = max_hp
+		if Global.hp >= max_hp:
+			Global.hp = max_hp
 		
 			
 	
@@ -68,4 +67,4 @@ func _on_hurt_box_body_entered(body):
 		
 
 	await get_tree().create_timer(2).timeout
-	SPEED = 60
+	SPEED = 400

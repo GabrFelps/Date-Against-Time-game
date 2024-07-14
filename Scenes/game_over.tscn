@@ -10,8 +10,8 @@ script = ExtResource("1_wndma")
 [node name="Default2dIllustrationOfANighttimeUrbanSceneShowAGirl1" type="Sprite2D" parent="."]
 self_modulate = Color(0.396889, 0.396889, 0.396889, 1)
 z_index = -1
-position = Vector2(477.5, 271.5)
-scale = Vector2(0.946289, 0.530273)
+position = Vector2(480.5, 271.5)
+scale = Vector2(0.938477, 0.530273)
 texture = ExtResource("3_2io3v")
 
 [node name="Label" type="Label" parent="."]

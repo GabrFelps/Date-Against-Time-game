@@ -2134,7 +2134,7 @@ visible = false
 
 [node name="girl" parent="." instance=ExtResource("7_i7juw")]
 visibility_layer = 3
-position = Vector2(616, -7623)
+position = Vector2(572, -7913)
 
 [node name="MensagemSpawner" parent="." instance=ExtResource("8_r8m8m")]
 
