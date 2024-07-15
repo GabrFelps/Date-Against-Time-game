@@ -165,6 +165,9 @@ offset_right = 45.0
 offset_bottom = -95.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_colors/font_pressed_color = Color(0.698039, 0, 0.105882, 1)
+theme_override_colors/font_focus_color = Color(1, 0.14902, 0.113725, 1)
+theme_override_colors/font_disabled_color = Color(1, 0.14902, 0.113725, 1)
 theme_override_fonts/font = ExtResource("2_m23bd")
 text = "Start"
 

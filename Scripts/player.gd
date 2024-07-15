@@ -4,7 +4,7 @@ class_name Player
 signal hit
 @onready var player_sprite = $PlayerSprite
 @onready var collision = $CollisionShape2D
-var SPEED = 400.0
+var SPEED = 60.0
 
 
 # Stats do Player
@@ -65,6 +65,7 @@ func _on_hurt_box_body_entered(body):
 		print("Player colidiu com mensagem.")
 		Global.game_over()
 		
+		
 
 	await get_tree().create_timer(2).timeout
-	SPEED = 400
+	SPEED = 60
