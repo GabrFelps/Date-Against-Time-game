@@ -4,6 +4,7 @@ extends Node
 @onready var transition_scene : PackedScene = preload("res://Scenes/fade_in_transition.tscn")
 var message_index = 0
 var pode_spawnar_mensagem = false
+var hp = 0
 
 # Cenas principais
 var main_scenes := {
