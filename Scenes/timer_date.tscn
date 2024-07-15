@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cj18a3h7l4nbo"]
 
 [ext_resource type="Script" path="res://Scripts/TimerDate.gd" id="1_iac8c"]
-[ext_resource type="FontFile" uid="uid://blec7eldd6yq" path="res://Assets/daydream_3/Daydream.ttf" id="2_bqi1j"]
+[ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_3ho0b"]
 
 [node name="TimerDate" type="Control"]
 layout_mode = 3
@@ -27,6 +27,7 @@ offset_top = -2.0
 offset_right = 132.0
 offset_bottom = 44.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("2_bqi1j")
+theme_override_fonts/font = ExtResource("2_3ho0b")
+justification_flags = 35
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

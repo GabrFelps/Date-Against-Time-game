@@ -5,6 +5,9 @@ extends Node
 var message_index = 0
 var pode_spawnar_mensagem = false
 var hp = 0
+var final = 0
+
+
 
 # Cenas principais
 var main_scenes := {

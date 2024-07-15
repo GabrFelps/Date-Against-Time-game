@@ -9,7 +9,7 @@ func _ready():
 	restart.grab_focus()
 	
 func _process(delta):
-	if Global.hp >= 120:
+	if Global.hp >= 120 and Global.final > 0:
 		label_2.visible = true
 	
 func _on_restart_pressed():
