@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name Enemy
 
-@export var SPEED = 50.0
+@export var SPEED = 55.0
 @export var hp = 10.0
 @export var DAMAGE = 100.0
 @onready var player = get_tree().get_first_node_in_group("Player")

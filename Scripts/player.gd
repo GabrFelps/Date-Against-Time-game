@@ -10,6 +10,9 @@ var SPEED = 60.0
 # Stats do Player
 var max_hp = 200
 
+func _ready():
+	Global.playerNode = self;
+
 func _physics_process(_delta):
 	movement()
 	

@@ -6,7 +6,9 @@ var message_index = 0
 var pode_spawnar_mensagem = false
 var hp = 0
 var final = 0
-
+var girlNode : Node2D = null;
+var playerNode : Node2D = null;
+var arrowAngle : Vector2 = Vector2.ZERO
 
 
 # Cenas principais
@@ -18,6 +20,12 @@ var main_scenes := {
 	"game_over" : preload("res://Scenes/game_over.tscn"),
 	"win" : preload("res://Scenes/game_win.tscn")
 }
+
+func _process(delta):
+	if girlNode != null and playerNode != null: 
+		# TODO: verificar função is_instance_valid()
+		arrowAngle = playerNode.global_position.direction_to(girlNode.global_position)
+		
 
 # Função que transiciona as cenas
 func transition_to_scene(destiny_scene: String) -> void:
