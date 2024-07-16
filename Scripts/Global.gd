@@ -21,6 +21,11 @@ var main_scenes := {
 	"win" : preload("res://Scenes/game_win.tscn")
 }
 
+var songs := {
+	"olha_mensagem" : "res://Songs/Fui fui olha a mensagem.mp3",
+	"main_music" : "res://Songs/Digital Love [8 Bit Tribute to Daft Punk] - 8 Bit Universe.mp3"
+}
+
 func _process(delta):
 	if girlNode != null and playerNode != null: 
 		# TODO: verificar função is_instance_valid()
