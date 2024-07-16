@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6tn6x3xlld5o"
+path="res://.godot/imported/Digital Love [8 Bit Tribute to Daft Punk] - 8 Bit Universe.mp3-571102fb0681f93e1447d725608cb3e1.mp3str"
+
+[deps]
+
+source_file="res://Songs/Digital Love [8 Bit Tribute to Daft Punk] - 8 Bit Universe.mp3"
+dest_files=["res://.godot/imported/Digital Love [8 Bit Tribute to Daft Punk] - 8 Bit Universe.mp3-571102fb0681f93e1447d725608cb3e1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

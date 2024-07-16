@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bixccnx7d380w"]
+[gd_scene load_steps=6 format=3 uid="uid://bixccnx7d380w"]
 
 [ext_resource type="Script" path="res://Scripts/Menu_Inicial.gd" id="1_4gnl2"]
 [ext_resource type="Texture2D" uid="uid://jyd88e6i8kp" path="res://Assets/Default_Crie_uma_imagem_em_pixel_art_para_o_fundo_do_menu_de_u_3.jpg" id="2_wobdd"]
 [ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="3_7j03c"]
+[ext_resource type="AudioStream" uid="uid://b6tn6x3xlld5o" path="res://Songs/Digital Love [8 Bit Tribute to Daft Punk] - 8 Bit Universe.mp3" id="4_kejme"]
 
 [sub_resource type="Theme" id="Theme_yv1ki"]
 Button/font_sizes/font_size = 16
@@ -100,3 +101,7 @@ grow_vertical = 0
 theme_override_fonts/font = ExtResource("3_7j03c")
 theme_override_font_sizes/font_size = 13
 text = "By  Felipe Gabriel  Marques and Enzo Melo Araujo"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_kejme")
+autoplay = true

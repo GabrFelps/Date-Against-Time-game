@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://xxx6tsatoeuh"]
+[gd_scene load_steps=14 format=3 uid="uid://xxx6tsatoeuh"]
 
 [ext_resource type="Texture2D" uid="uid://dy8cbj1oljlnm" path="res://Assets/City-Tiles/CP_V1.0.4_nyknck/CP_V1.0.4.png" id="1_c2cbt"]
 [ext_resource type="PackedScene" uid="uid://b7k2dxx3qohk7" path="res://Scenes/player.tscn" id="3_rlic6"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cj18a3h7l4nbo" path="res://Scenes/timer_date.tscn" id="6_p3bgx"]
 [ext_resource type="PackedScene" uid="uid://clyisfm4wsy4o" path="res://Scenes/girl.tscn" id="7_i7juw"]
 [ext_resource type="PackedScene" uid="uid://cxpeyqa041jdn" path="res://Scenes/enemy_spawner.tscn" id="8_r8m8m"]
+[ext_resource type="AudioStream" uid="uid://cjolu2mgq7wia" path="res://Songs/[8 bit] Iron Maiden - Fear of the Dark.mp3" id="9_vf76a"]
 [ext_resource type="PackedScene" uid="uid://cv58p1d6iye14" path="res://Scenes/ghost_spawner.tscn" id="9_yhnv4"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_uv7rn"]
@@ -2153,6 +2154,10 @@ visibility_layer = 2
 position = Vector2(641, 9)
 rotation = 3.14099
 shape = SubResource("WorldBoundaryShape2D_5w2pu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_vf76a")
+autoplay = true
 
 [connection signal="area_entered" from="Area2D" to="EnemySpawner" method="_on_area_2d_area_entered"]
 

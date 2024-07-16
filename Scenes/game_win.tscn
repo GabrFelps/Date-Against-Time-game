@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cnnhstwnmux4v"]
+[gd_scene load_steps=5 format=3 uid="uid://cnnhstwnmux4v"]
 
 [ext_resource type="Script" path="res://Scripts/Game_Win.gd" id="1_gu2cx"]
 [ext_resource type="Texture2D" uid="uid://ct33a1swlk62w" path="res://Assets/Default_2D_illustration_of_a_nighttime_urban_scene_with_the_th_2.jpg" id="2_pgthu"]
 [ext_resource type="FontFile" uid="uid://cus5tv4wylsi3" path="res://Assets/Valentine Cute.ttf" id="2_qsvxh"]
+[ext_resource type="AudioStream" uid="uid://qu0le4mgd3tu" path="res://Songs/8-bit RPG Music _ Victory Theme.mp3" id="4_l0t2u"]
 
 [node name="Game_Win" type="CanvasLayer"]
 script = ExtResource("1_gu2cx")
@@ -54,6 +55,10 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_qsvxh")
 theme_override_font_sizes/font_size = 14
 text = "MAIN MENU"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_l0t2u")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="VBoxContainer/Main_Menu" to="." method="_on_main_menu_pressed"]

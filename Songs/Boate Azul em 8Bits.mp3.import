@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxyjggwohfmxx"
+path="res://.godot/imported/Boate Azul em 8Bits.mp3-2c96964d8a917f4946cc76e57514f162.mp3str"
+
+[deps]
+
+source_file="res://Songs/Boate Azul em 8Bits.mp3"
+dest_files=["res://.godot/imported/Boate Azul em 8Bits.mp3-2c96964d8a917f4946cc76e57514f162.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

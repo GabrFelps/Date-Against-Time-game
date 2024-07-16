@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgha7t86lmubu"
+path="res://.godot/imported/Game Over (8-Bit Music).mp3-791587d39a6900aa7c406c3fbf0c8ed5.mp3str"
+
+[deps]
+
+source_file="res://Songs/Game Over (8-Bit Music).mp3"
+dest_files=["res://.godot/imported/Game Over (8-Bit Music).mp3-791587d39a6900aa7c406c3fbf0c8ed5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
