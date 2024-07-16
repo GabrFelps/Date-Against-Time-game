@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+func _ready():
+	Global.girlNode = self; 
+	
 func _on_area_2d_body_entered(body):
 	if body is Player:
 		Global.final += 1
