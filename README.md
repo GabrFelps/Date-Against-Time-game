@@ -1,29 +1,32 @@
 # Date Against Time
 
-**Date Against Time** é um jogo arcade 2D desenvolvido em Godot, com foco em ação casual e mecânicas simples. O jogo combina reflexos rápidos e desvio de obstáculos, oferecendo uma experiência cativante e desafiadora, ideal para sessões de jogo rápidas.
+**Date Against Time** is a fast-paced 2D arcade game developed with Godot, focusing on casual action and simple mechanics. Players control a young character racing against time to avoid dynamic obstacles, combining quick reflexes and strategic movement for an engaging and challenging experience ideal for short play sessions.
 
-## Principais Mecânicas
+## Core Gameplay
 
-- **Controle Simples de Movimento**: O jogador controla um jovem tentando não chegar atrasado para o encontro, usando comandos básicos, focados em desviar de obstáculos em tempo real, tornando o jogo acessível e intuitivo.
+- **Simple Movement Controls:** Navigate the character using intuitive commands to dodge obstacles in real-time, making the game accessible and easy to pick up.
+- **Dynamic Obstacles:**
+  - **Ghosts of Insecurity:** Appear randomly, and colliding with them increases the "shame" meter while slowing the player down, requiring quick adaptation.
+  - **Incoming Messages:** After some time, messages from the date approach the player; collision results in immediate game over, adding tension to gameplay.
+- **Progression and Visual Feedback:** The shame meter provides real-time feedback on the player’s condition, increasing with each collision and signaling game over when full.
 
-- **Obstáculos Dinâmicos**: 
-    - **Fantasmas da Insegurança**: Aparecem de forma aleatória e, ao colidir com o jogador, aumentam sua barra de vergonha e reduzem a velocidade, exigindo uma adaptação rápida e planejamento estratégico.
-    - **Mensagens Rápidas**: Após certo tempo, surgem mensagens da pretendente que se movem em direção ao jogador. Uma colisão com essas mensagens resulta em game over, adicionando uma camada de pressão na jogabilidade.
+## Technical Details
 
-- **Sistema de Progressão e Feedback Visual**: A barra de vergonha atua como feedback visual da condição do jogador, aumentando a cada colisão com obstáculos e indicando o progresso para o game over, caso atinja o limite.
+- **Engine:** Built with the Godot Game Engine using GDScript for game logic, collision handling, timers, and visual feedback.
+- **Assets & Animation:**
+  - Pixel art assets created in **Piskel**, seamlessly integrated into Godot for a cohesive 2D aesthetic.
+  - Animations handled within Godot to ensure smooth, visually appealing gameplay.
+- **Project Management:** Tasks organized in **Notion** for efficient development workflow.
+- **Version Control:** Source code managed with **Git** and hosted on **GitHub** for robust versioning and collaboration.
 
-## Aspectos Técnicos
+## Performance & Scalability
 
-- **Engine**: Desenvolvido na **Godot Game Engine** com **GDScript** para lógica e controle de objetos no jogo. O GDScript possibilita uma atualização rápida e otimização das funcionalidades, como colisões, temporizadores e feedback visual da barra de vergonha.
-  
-- **Assets e Animações**: 
-    - Os assets de pixel art foram criados no **Piskel** e integram-se facilmente ao Godot, proporcionando um estilo visual coeso. 
-    - Animações são tratadas dentro do Godot para garantir fluidez e uma experiência visual alinhada à estética 2D.
+Designed to maintain smooth performance even as new obstacles and difficulty levels are added. Godot’s flexible architecture allows easy parameter tuning and future feature expansions without compromising gameplay fluidity.
 
-- **Gerenciamento de Tarefas e Controle de Versão**: 
-    - **Notion** foi utilizado para organizar tarefas e acompanhar o desenvolvimento, garantindo um pipeline eficiente.
-    - **GitHub e Git** serviu para o controle de versão e backups, possibilitando um histórico robusto de alterações.
+## License
 
-## Desempenho e Escalabilidade
+This project is licensed under the [MIT License](LICENSE).
 
-O jogo foi estruturado para manter um desempenho fluido mesmo com a adição de novos obstáculos e incrementos de dificuldade. A engine Godot permite escalabilidade e ajustes de parâmetros para que novos inimigos e mecânicas possam ser incorporados em atualizações futuras, mantendo o desempenho otimizado.
+---
+
+Experience a thrilling race against time with charming pixel art and engaging mechanics - perfect for quick, addictive gaming sessions!
